@@ -12,6 +12,15 @@
 		712E05C527393842005216C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712E05C427393842005216C3 /* ViewController.swift */; };
 		712E05CA27393844005216C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712E05C927393844005216C3 /* Assets.xcassets */; };
 		712E05CD27393844005216C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712E05CB27393844005216C3 /* LaunchScreen.storyboard */; };
+		7165688D2739603E000AAC5C /* MoreButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7165688C2739603E000AAC5C /* MoreButton.swift */; };
+		716568902739606D000AAC5C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7165688F2739606D000AAC5C /* SnapKit */; };
+		7165689227396174000AAC5C /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7165689127396174000AAC5C /* UIColor+Extensions.swift */; };
+		7165689527396628000AAC5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7165689427396628000AAC5C /* ContentView.swift */; };
+		716568982739D56F000AAC5C /* CatFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716568972739D56F000AAC5C /* CatFact.swift */; };
+		7165689A2739D971000AAC5C /* DogImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716568992739D971000AAC5C /* DogImage.swift */; };
+		7165689D2739DA51000AAC5C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7165689C2739DA51000AAC5C /* Kingfisher */; };
+		71F558D1273A909700322211 /* Notification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F558D0273A909700322211 /* Notification+Extensions.swift */; };
+		71F558D3273A952900322211 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F558D2273A952900322211 /* URL+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,13 @@
 		712E05C927393844005216C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		712E05CC27393844005216C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		712E05CE27393844005216C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7165688C2739603E000AAC5C /* MoreButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreButton.swift; sourceTree = "<group>"; };
+		7165689127396174000AAC5C /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		7165689427396628000AAC5C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		716568972739D56F000AAC5C /* CatFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFact.swift; sourceTree = "<group>"; };
+		716568992739D971000AAC5C /* DogImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImage.swift; sourceTree = "<group>"; };
+		71F558D0273A909700322211 /* Notification+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extensions.swift"; sourceTree = "<group>"; };
+		71F558D2273A952900322211 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7165689D2739DA51000AAC5C /* Kingfisher in Frameworks */,
+				716568902739606D000AAC5C /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +72,45 @@
 		712E05BF27393842005216C3 /* hw4 */ = {
 			isa = PBXGroup;
 			children = (
-				712E05C027393842005216C3 /* AppDelegate.swift */,
-				712E05C227393842005216C3 /* SceneDelegate.swift */,
+				716568962739D567000AAC5C /* Model */,
+				7165689327396177000AAC5C /* Extensions */,
+				7165688B27396034000AAC5C /* Views */,
 				712E05C427393842005216C3 /* ViewController.swift */,
+				712E05C227393842005216C3 /* SceneDelegate.swift */,
+				712E05C027393842005216C3 /* AppDelegate.swift */,
 				712E05C927393844005216C3 /* Assets.xcassets */,
 				712E05CB27393844005216C3 /* LaunchScreen.storyboard */,
 				712E05CE27393844005216C3 /* Info.plist */,
 			);
 			path = hw4;
+			sourceTree = "<group>";
+		};
+		7165688B27396034000AAC5C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7165688C2739603E000AAC5C /* MoreButton.swift */,
+				7165689427396628000AAC5C /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7165689327396177000AAC5C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7165689127396174000AAC5C /* UIColor+Extensions.swift */,
+				71F558D0273A909700322211 /* Notification+Extensions.swift */,
+				71F558D2273A952900322211 /* URL+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		716568962739D567000AAC5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				716568972739D56F000AAC5C /* CatFact.swift */,
+				716568992739D971000AAC5C /* DogImage.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +129,10 @@
 			dependencies = (
 			);
 			name = hw4;
+			packageProductDependencies = (
+				7165688F2739606D000AAC5C /* SnapKit */,
+				7165689C2739DA51000AAC5C /* Kingfisher */,
+			);
 			productName = hw4;
 			productReference = 712E05BD27393842005216C3 /* hw4.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +161,10 @@
 				Base,
 			);
 			mainGroup = 712E05B427393842005216C3;
+			packageReferences = (
+				7165688E2739606D000AAC5C /* XCRemoteSwiftPackageReference "SnapKit" */,
+				7165689B2739DA51000AAC5C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 712E05BE27393842005216C3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,7 +192,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				712E05C527393842005216C3 /* ViewController.swift in Sources */,
+				7165689227396174000AAC5C /* UIColor+Extensions.swift in Sources */,
+				716568982739D56F000AAC5C /* CatFact.swift in Sources */,
+				7165689527396628000AAC5C /* ContentView.swift in Sources */,
 				712E05C127393842005216C3 /* AppDelegate.swift in Sources */,
+				7165688D2739603E000AAC5C /* MoreButton.swift in Sources */,
+				7165689A2739D971000AAC5C /* DogImage.swift in Sources */,
+				71F558D3273A952900322211 /* URL+Extensions.swift in Sources */,
+				71F558D1273A909700322211 /* Notification+Extensions.swift in Sources */,
 				712E05C327393842005216C3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +412,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7165688E2739606D000AAC5C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		7165689B2739DA51000AAC5C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7165688F2739606D000AAC5C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7165688E2739606D000AAC5C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		7165689C2739DA51000AAC5C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7165689B2739DA51000AAC5C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 712E05B527393842005216C3 /* Project object */;
 }
